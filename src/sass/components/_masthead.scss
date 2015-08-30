@@ -7,8 +7,12 @@
     position: relative;
 }
 .masthead-content {
-    padding: 15rem;
+    padding: 10rem 0;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 15rem 0;
+    }
 }
 .masthead-overlay {
     background: rgba(0, 0, 0, 0.7);

@@ -2,6 +2,7 @@ var Marionette = require('backbone.marionette');
 var BaseView = require('./BaseView');
 var template = require('templates/index.hbs');
 var IntroView = require('views/IntroView');
+var AboutView = require('views/AboutView');
 var WorkView = require('views/WorkView');
 var ContactView = require('views/ContactView');
 
@@ -13,6 +14,7 @@ module.exports = Marionette.LayoutView.extend({
 
     regions: {
         regionIntro: '#region-intro',
+        regionAbout: '#region-about',
         regionWork: '#region-work',
         regionContact: '#region-contact'
     },
@@ -31,6 +33,10 @@ module.exports = Marionette.LayoutView.extend({
         // Show Intro View
         this.introView = new IntroView();
         this.regionIntro.show(this.introView);
+
+        // Show About View
+        this.aboutView = new AboutView();
+        this.regionAbout.show(this.aboutView);
 
         // Show Work View
         this.workView = new WorkView();

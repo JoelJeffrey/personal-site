@@ -1,0 +1,24 @@
+//
+// Section Styles
+// ---------------------------
+.section {
+    padding: 3rem 0;
+}
+.section-intro {
+    padding: 0;
+}
+.section-about {
+    padding: 12rem 0;
+    p {
+        color: #727272;
+        font-size: 1.4em;
+        line-height: 200%;
+        margin-bottom: 3.5rem;
+    }
+    .about-img {
+        img {
+            border: 8px solid $white;
+            @extend %box-shadow;
+        }
+    }
+}
