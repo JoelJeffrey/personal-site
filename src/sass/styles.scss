@@ -10,6 +10,9 @@
 // Global styles (*, html, body)
 @import "base";
 
+// Grid
+@import "bootstrap-grid";
+
 // Typography
 @import "fonts"; // @font-face embeds
 @import "typography"; // Block level (h1, p) and text-level (em, strong) type

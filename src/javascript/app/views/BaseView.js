@@ -10,7 +10,7 @@ module.exports = Marionette.ItemView.extend({
 
     templateHelpers: function() {
         return {
-            'staticUrl': window.config.staticUrl
+            // 'staticUrl': window.config.staticUrl
         };
     }
 

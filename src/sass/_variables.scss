@@ -8,8 +8,11 @@ $baseUrl: env_or_default("STATIC_URL", "/static/");
 
 // Colors
 // -------------------------
-$white:                     #fff !default;
-$black:                     #444 !default;
+$white:                     #ffffff !default;
+$black:                     #000000 !default;
+$grayDark:                  #333333 !default;
+$gray:                      #727272 !default;
+$teal:                      #1ABBAC !default;
 
 // Scaffolding
 // -------------------------
@@ -28,6 +31,7 @@ $linkColorHover:            darken($linkColor, 10%) !default;
 
 $sans:                      sans-serif !default;
 $serif:                     serif !default;
+$roboto:                    'Roboto', sans-serif;
 
 $thin:                      100 !default;
 $light:                     300 !default;
@@ -37,11 +41,11 @@ $bold:                      600 !default;
 $ultraBold:                 800 !default;
 
 $baseFontSize:              10px !default;
-$baseFontFamily:            $sans !default;
+$baseFontFamily:            $roboto !default;
 $baseLineHeight:            22px !default;
 
 $headingsFontWeight:        $bold !default;
-$headingsFontFamily:        inherit !default;
+$headingsFontFamily:        $roboto !default;
 $headingsColor:             inherit !default;
 
 // Borders

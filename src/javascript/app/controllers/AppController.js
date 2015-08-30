@@ -6,7 +6,9 @@
 
         // Views
         GlobalView = require('views/GlobalView.js'),
-        BaseView = require('views/BaseView.js');
+        BaseView = require('views/BaseView.js'),
+        HeaderView = require('views/HeaderView.js'),
+        IndexView = require('views/IndexView.js');
 
     module.exports = Backbone.Marionette.Controller.extend({
 
@@ -23,6 +25,8 @@
         bootstrap: function() {
             this.globalView = new GlobalView();
             this.baseView = new BaseView();
+            this.headerView = new HeaderView();
+            app.regionHeader.show(this.headerView);
         },
 
         navigate: function(options) {
@@ -45,7 +49,8 @@
         =========================================== */
 
         index: function() {
-            console.log('AppController > index()');
+            this.indexView = new IndexView();
+            app.regionMain.show(this.indexView);
         },
 
         home: function() {

@@ -9,24 +9,49 @@ a {
     text-decoration: none;
     &:hover {
         color: $linkColorHover;
-        text-decoration: underline;
+    }
+}
+
+.header-link {
+    color: $gray;
+    padding: 3.1rem 0 2.5rem;
+    border-bottom: 6px solid transparent;
+    font-size: 1.5rem;
+    font-weight: $bold;
+    line-height: 110%;
+    text-transform: uppercase;
+
+    @extend %transition-all;
+
+    &:hover {
+        color: $gray;
+        border-color: $teal;
     }
 }
 
 // Body text
 // ----------
-p { margin: 0 0 $baseLineHeight / 2; }
-
+p { 
+    margin: 0 0 $baseLineHeight / 2;
+    line-height: 150%;
+    font-size: 1.8em;
+}
 
 // Emphasis & Misc
 // -----------------
 em { font-style: italic; }
+
 cite { font-style: normal; }
 
 
 // Headings
 // ---------
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, 
+h2, .h2, 
+h3, .h3, 
+h4, .h4, 
+h5, .h5, 
+h6, .h6, {
     margin: ($baseLineHeight / 2) 0;
     font-weight: $headingsFontWeight;
     font-family: $headingsFontFamily;
@@ -34,9 +59,84 @@ h1, h2, h3, h4, h5, h6 {
     color: $headingsColor;
     text-rendering: optimizelegibility; // Fix the character spacing for headings
 }
+
 h1 { font-size: 3.6em; }
+
 h2 { font-size: 3.0em; }
+
 h3 { font-size: 2.4em; }
+
 h4 { font-size: 1.8em; }
+
 h5 { font-size: 1.4em; }
+
 h6 { font-size: 1.2em; }
+
+.masthead-title {
+    font-size: 7.2em;
+    font-weight: $bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: $white;
+    span {
+        color: $teal;
+    }
+}
+
+.masthead-subtitle {
+    font-size: 1.8em;
+    font-weight: $light;
+    margin-bottom: 3.8rem;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.section-title {
+    font-size: 4.8em;
+    line-height: 1.1;
+    font-weight: $bold;
+    color: $grayDark;
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+    
+    &.alt {
+        color: $white;
+    }
+}
+
+.section-subtitle {
+    font-size: 2.4em;
+    font-weight: $bold;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: $teal;
+
+    &.alt {
+        color: $white;
+    }
+}
+
+.section-copy {
+    margin: 0;
+    padding: 0;
+    line-height: 3rem;
+    font-family: $roboto;
+    font-size: 1.6em;
+    font-weight: $light;
+    color: $gray;
+
+    &.alt {
+        color: $white;
+    }
+}
+
+.page-title {
+    font-size: 2.8rem;
+    line-height: 117%;
+    color: $teal;
+    font-family: $roboto;
+
+    @media screen and (min-width: 768px) {
+        font-size: 4.8rem;
+    }
+}

@@ -1,0 +1,25 @@
+//
+// Header
+// ---------------------------
+.main-header {
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0,0,0,.35);
+
+    .logo {
+        float: left;
+        margin-top: 2rem;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 3rem;
+
+        a {
+            display: block;
+        }
+    }
+
+    nav {
+        text-align: right;
+    }
+}

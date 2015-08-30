@@ -7,7 +7,9 @@ var Marionette = require('backbone.marionette');
 app = new Marionette.Application();
 
 app.addRegions({
-    mainRegion: '#main-region'
+    regionHeader: '#region-header',
+    regionMain: '#region-main',
+    regionFooter: '#region-footer'
 });
 
 app.Behaviors = app.Behaviors || {};

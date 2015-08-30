@@ -1,0 +1,15 @@
+//
+// Masthead
+// ---------------------------
+.masthead {
+    background: url(../images/masthead.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.masthead-content {
+    padding: 15rem;
+    text-align: center;
+}
+.masthead-overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
