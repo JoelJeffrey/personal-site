@@ -1,12 +1,10 @@
 var Marionette = require('backbone.marionette');
 var BaseView = require('./BaseView');
-var template = require('templates/about.hbs');
+var template = require('templates/skills.hbs');
 
 module.exports = Marionette.ItemView.extend({
 
-    className: 'section section-about',
-
-    id: 'about-me',
+    className: 'section section-skills',
 
     template: template,
 

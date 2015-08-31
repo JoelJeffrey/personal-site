@@ -2,23 +2,75 @@
 // Section Styles
 // ---------------------------
 .section {
-    padding: 3rem 0;
+    padding: 8em 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 12rem 0;
+    }
 }
+
 .section-intro {
     padding: 0;
 }
+
 .section-about {
-    padding: 12rem 0;
+
     p {
         color: #727272;
         font-size: 1.4em;
         line-height: 200%;
         margin-bottom: 3.5rem;
     }
-    .about-img {
-        img {
-            border: 8px solid $white;
-            @extend %box-shadow;
+}
+
+.about-wrap {
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 4rem;
+    }
+}
+
+.about-img {
+
+    img {
+        border: 8px solid $white;
+        @extend %box-shadow;
+
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 3rem;
         }
     }
+}
+
+.about-info {
+    h5 {
+        border-bottom: 1px solid #eeeeee;
+        color: #727272;
+        font-size: 1.4em;
+        margin-bottom: 1.3rem;
+        padding-bottom: 1.3rem;
+
+        span {
+            display: inline-block;
+            min-width: 7rem;
+        }
+    }
+}
+
+.about-social {
+    margin: 2.5rem 0 0;
+
+    li {
+        display: inline-block;
+        margin-right: 0.8rem;
+
+        i {
+            font-size: 1.4em;
+            color: $teal;
+        }
+    }
+}
+
+.section-skills {
+    background-color: $black;
 }
