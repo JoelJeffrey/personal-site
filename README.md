@@ -1,21 +1,21 @@
 # Portfolio-Site
 
-My current work-in-progress portfolio site, single page application.
+My current work-in-progress portfolio site, single page application.  
 
-Tech Stack:
+Tech Stack:  
+  
+Javascript:  
+    - Backbone.js  
+    - Marionette.js  
+    - Underscore.js  
+    - Require.js  
 
-Javascript: 
-    Backbone.js
-    Marionette.js
-    Underscore.js
-    Require.js
+HTML:  
+    - Handlebars templates
+  
+CSS:  
+    - CSS3  
+    - SCSS  
 
-HTML: 
-    Handlebars templates
-
-CSS: 
-    CSS3
-    SCSS
-
-Task runners:
-    Gulp
+Task runners:  
+    - Gulp  
