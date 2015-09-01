@@ -4,7 +4,7 @@ var template = require('templates/skills.hbs');
 
 module.exports = Marionette.ItemView.extend({
 
-    className: 'section section-skills',
+    className: 'section section-skills has-overlay',
 
     template: template,
 

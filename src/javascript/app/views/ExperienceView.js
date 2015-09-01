@@ -1,10 +1,10 @@
 var Marionette = require('backbone.marionette');
 var BaseView = require('./BaseView');
-var template = require('templates/intro.hbs');
+var template = require('templates/experience.hbs');
 
 module.exports = Marionette.ItemView.extend({
 
-    className: 'section section-intro has-overlay',
+    className: 'section section-experience',
 
     template: template,
 
@@ -13,7 +13,7 @@ module.exports = Marionette.ItemView.extend({
     events: {},
 
     initialize: function () {
-    	
+        
     },
 
     onBeforeRender: function () {},

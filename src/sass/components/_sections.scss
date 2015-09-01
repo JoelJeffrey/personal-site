@@ -2,17 +2,36 @@
 // Section Styles
 // ---------------------------
 .section {
-    padding: 8em 0;
+    padding: 8rem 0;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding: 12rem 0;
+    }
+
+    &.has-overlay {
+        padding: 0;
+    }
+}
+
+.section-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8rem 0;
 
     @media screen and (min-width: 768px) {
         padding: 12rem 0;
     }
 }
 
+// Section Intro
+// -------------------
 .section-intro {
-    padding: 0;
+    background: url(../images/masthead.jpg) center center no-repeat;
+    background-size: cover;
 }
 
+// Section About
+// -------------------
 .section-about {
 
     p {
@@ -71,6 +90,33 @@
     }
 }
 
+// Section Skills
+// -------------------
 .section-skills {
-    background-color: $black;
+    background: url(../images/skills-bg.jpg) center center no-repeat;
+
+    .section-overlay {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.skill-wrap {
+
+}
+
+.skill-bubble {
+    background: $teal;
+    color: $white;
+    font-size: 1.8em;
+    padding: 2rem;
+    display: inline-block;
+    margin: 1rem;
+
+    @extend %box-shadow;
+}
+
+// Section Experience
+// -------------------
+.section-experience {
+    background-color: $teal;
 }

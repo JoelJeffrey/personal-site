@@ -4,6 +4,7 @@ var template = require('templates/index.hbs');
 var IntroView = require('views/IntroView');
 var AboutView = require('views/AboutView');
 var SkillsView = require('views/SkillsView');
+var ExperienceView = require('views/ExperienceView');
 var WorkView = require('views/WorkView');
 var ContactView = require('views/ContactView');
 
@@ -17,6 +18,7 @@ module.exports = Marionette.LayoutView.extend({
         regionIntro: '#region-intro',
         regionAbout: '#region-about',
         regionSkills: '#region-skills',
+        regionExperience: '#region-experience',
         regionWork: '#region-work',
         regionContact: '#region-contact'
     },
@@ -43,6 +45,10 @@ module.exports = Marionette.LayoutView.extend({
         // Show Skills View
         this.skillsView = new SkillsView();
         this.regionSkills.show(this.skillsView);
+
+        // Show Experience View
+        this.experienceView = new ExperienceView();
+        this.regionExperience.show(this.experienceView);
 
         // Show Work View
         this.workView = new WorkView();

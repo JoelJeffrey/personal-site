@@ -2,18 +2,8 @@
 // Masthead
 // ---------------------------
 .masthead {
-    background: url(../images/masthead.jpg) center center no-repeat;
-    background-size: cover;
     position: relative;
 }
 .masthead-content {
-    padding: 10rem 0;
     text-align: center;
-
-    @media screen and (min-width: 768px) {
-        padding: 15rem 0;
-    }
-}
-.masthead-overlay {
-    background: rgba(0, 0, 0, 0.7);
 }
