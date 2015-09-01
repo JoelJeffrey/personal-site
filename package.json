@@ -1,10 +1,10 @@
 {
-    "name": "backbone-marionette-gulp-starter",
-    "version": "0.1.0",
-    "description": "Backbone-Marionette-Gulp starter with common tasks and scenarios",
+    "name": "Joel's Portfolio Site",
+    "version": "0.6.0",
+    "description": "uses Backbone-Marionette-Gulp starter with common tasks and scenarios",
     "repository": {
         "type": "git",
-        "url": "git://github.com/MadeInHaus/backbone-marionette-gulp-starter.git"
+        "url": "https://github.com/JoelJeffrey/personal-site.git"
     },
     "browserify": {
         "transform": [

@@ -1,3 +1,3 @@
 #### Primary Development ####
-- HAUS Team
-
+- Joel Jeffrey
+    - With guidance from Caleb Jeffrey
