@@ -1,3 +1,3 @@
-# Backbone-Marionette-Gulp Starter
+# Backbone-Marionette-Portfolio-Site
 
 My Portfolio site
